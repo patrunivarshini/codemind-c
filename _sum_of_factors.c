@@ -1,9 +1,8 @@
 #include<stdio.h>
-int main()
+void fun(int n)
 {
-    int n,i,sum=1;
-    scanf("%d",&n);
-    for(i=2;i<n;i++)
+    int i,sum=0;
+    for(i=1;i<n;i++)
     {
         if(n%i==0)
         {
@@ -11,4 +10,10 @@ int main()
         }
     }
     printf("%d",sum);
+}
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    fun(n);
 }
