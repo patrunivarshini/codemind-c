@@ -1,13 +1,11 @@
-#include<stdio.h>
-void fun(int a,int b)
-{
-    float avg;
-    avg=(a+b)*0.5;
-    printf("Average of %d and %d is: %0.2f",a,b,avg);
-}
+#include<iostream>
+#include<iomanip>
+using namespace std;
 int main()
 {
     int a,b;
-    scanf("%d%d",&a,&b);
-    fun(a,b);
+    float c;
+    cin>>a>>b;
+    c=(a+b)*0.5;
+    cout<<"Average"<<" "<<"of"<<" "<<a<<" "<<"and"<<" "<<b<<" "<<"is:"<<" "<<fixed<<setprecision(2)<<c;
 }
